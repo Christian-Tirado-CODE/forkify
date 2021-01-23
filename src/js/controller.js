@@ -2,13 +2,6 @@ import 'regenerator-runtime/runtime';
 import * as model from './model';
 import recipeView from './views/recipeView';
 
-const timeout = function (s) {
-  return new Promise(function (_, reject) {
-    setTimeout(function () {
-      reject(new Error(`Request took too long! Timeout after ${s} second`));
-    }, s * 1000);
-  });
-};
 
 
 
@@ -28,11 +21,16 @@ const controlRecipes = async function () {
 
    
   } catch (err) {
-    alert(err);
+    
+    recipeView.renderError();
   }
 };
 
-['hashchange', 'load'].forEach(ev => window.addEventListener(ev, controlRecipes));
+const init = function(){
+  recipeView.addHandlerRender(controlRecipes);
+}
+
+init();
 
 // https://forkify-api.herokuapp.com/v2
 
@@ -43,3 +41,6 @@ const controlRecipes = async function () {
 // JS FRAMEWORKS ALREADY COME WITH A ARCHITECTURE.
 // COMPONENTS OF ANY ARCHITECTURE: BUSSINESS LOGIC, STATE, HTTP LIBRARY, APPLICATION LOGIC(ROUTER) AND PRESENTATION LOGIC(UI LAYER)
 // MODEL(BUSSINESS LOGIC, STATE AND HTTP LIBRARY), CONTROLLER(APPLICATION LOGIC, IT IS THE INTERMEDIARY BETWEEN THE OTHER TWO WHICH KNOW NOTHING ABOUT THEMSELVES, HANDLES UI EVENTS AND DISPATCHES TASKS TO MODEL AND VIEW), VIEW(PRESENTATION LOGIC)
+
+// EVENT HANDLING IN MVC: 
+//DESIGN PATTERNS: STANDARD SOLUTIONS TO COMMON PROBLEMS. EXAMPLE: PUBLISHER-SUBSCRIBER PATTERN
