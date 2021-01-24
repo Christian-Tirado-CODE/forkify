@@ -12,9 +12,11 @@ class ResultsView extends View {
   }
 
   _generateMarkupPreview(result){
+    const id = window.location.hash.slice(1);
+
     return `
     <li class="preview">
-    <a class="preview__link preview__link" href="#${result.id}">
+    <a class="preview__link ${result.id === id ? 'preview__link--active' : ''}" href="#${result.id}">
       <figure class="preview__fig">
         <img src="src/img/test-1.jpg" alt="${result.title}" />
       </figure>

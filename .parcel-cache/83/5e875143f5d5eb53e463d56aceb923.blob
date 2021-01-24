@@ -462,10 +462,7 @@ const controlRecipes = async function () {
     const id = window.location.hash.slice(1);
     if (!id) return;
 
-    _recipeView.default.renderSpinner(); // 0. Update results view to mark selected search result
-
-
-    _resultsView.default.update(model.getSearchResultsPage()); // 1. Loading recipe
+    _recipeView.default.renderSpinner(); // 1. Loading recipe
 
 
     await model.loadRecipe(id); //2. Rendering recipe
@@ -507,7 +504,8 @@ const controlPagination = function (goToPage) {
 const controlServings = function (newServings) {
   // Update the recipe servings (in state)
   model.updateServings(newServings); // Update the recipe view
-  //recipeView.render(model.state.recipe);
+
+  _recipeView.default.render(model.state.recipe);
 
   _recipeView.default.update(model.state.recipe);
 };
@@ -1379,6 +1377,7 @@ class View {
   }
 
   update(data) {
+    if (!data || Array.isArray(data) && data.length === 0) return this.renderError();
     this._data = data;
 
     const newMarkup = this._generateMarkup();
@@ -1388,16 +1387,11 @@ class View {
     const curElements = Array.from(this._parentElement.querySelectorAll('*'));
     newElements.forEach((newEl, i) => {
       const curEl = curElements[i];
-      console.log(curEl, newEl.isEqualNode(curEl)); //Updates changed TEXT
+      console.log(curEl, newEl.isEqualNode(curEl));
 
-      if (!newEl.isEqualNode(curEl) && newEl.firstChild?.nodeValue.trim() !== '') {
-        //console.log('💥', newEl.firstChild.nodeValue.trim());
+      if (!newEl.isEqualNode(curEl) && newEl.firstChild.nodeValue.trim() !== '') {
+        console.log('💥', newEl.firstChild.nodeValue.trim());
         curEl.textContent = newEl.textContent;
-      } //Updates changed ATTRIBUTE
-
-
-      if (!newEl.isEqualNode(curEl)) {
-        Array.from(newEl.attributes).forEach(attr => curEl.setAttribute(attr.name, attr.value));
       }
     });
   }
@@ -1525,10 +1519,9 @@ class ResultsView extends _View.default {
   }
 
   _generateMarkupPreview(result) {
-    const id = window.location.hash.slice(1);
     return `
     <li class="preview">
-    <a class="preview__link ${result.id === id ? 'preview__link--active' : ''}" href="#${result.id}">
+    <a class="preview__link preview__link" href="#${result.id}">
       <figure class="preview__fig">
         <img src="src/img/test-1.jpg" alt="${result.title}" />
       </figure>
