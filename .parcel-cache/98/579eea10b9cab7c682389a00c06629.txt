@@ -50,7 +50,7 @@
 53C:\Users\tirad\Desktop\forkify\node_modules\is-number132556628871363166 1
 74C:\Users\tirad\Desktop\forkify\node_modules\uri-js\dist\esnext\util.js.map121436361000000000 0
 76C:\Users\tirad\Desktop\forkify\node_modules\@nodelib\fs.scandir\src\adapters132556628756183681 1
-35C:\Users\tirad\Desktop\forkify\dist132559909766477677 1
+35C:\Users\tirad\Desktop\forkify\dist132560130230042033 1
 82C:\Users\tirad\Desktop\forkify\node_modules\@babel\generator\lib\generators\jsx.js121012626000000000 0
 97C:\Users\tirad\Desktop\forkify\node_modules\@babel\helper-compilation-targets\lib\filter-items.js121012626000000000 0
 63C:\Users\tirad\Desktop\forkify\node_modules\lodash\fp\pullAt.js121436361000000000 0
@@ -276,7 +276,7 @@
 101C:\Users\tirad\Desktop\forkify\node_modules\csso\node_modules\css-tree\lib\syntax\pseudo\nth-child.js121436361000000000 0
 88C:\Users\tirad\Desktop\forkify\node_modules\jsdom\lib\jsdom\living\window\Screen-impl.js121436361000000000 0
 55C:\Users\tirad\Desktop\forkify\node_modules\pn\dgram.js131594838820000000 0
-51C:\Users\tirad\Desktop\forkify\src\js\controller.js132559887751220163 0
+51C:\Users\tirad\Desktop\forkify\src\js\controller.js132560130217216943 0
 77C:\Users\tirad\Desktop\forkify\node_modules\postcss-discard-empty\LICENSE-MIT121436361000000000 0
 89C:\Users\tirad\Desktop\forkify\node_modules\caniuse-lite\data\features\css-containment.js121436361000000000 0
 101C:\Users\tirad\Desktop\forkify\node_modules\@parcel\node-libs-browser\node_modules\punycode\README.md130692890970000000 0
@@ -284,7 +284,7 @@
 64C:\Users\tirad\Desktop\forkify\node_modules\css-select\README.md121436361000000000 0
 99C:\Users\tirad\Desktop\forkify\node_modules\postcss-modules-values\node_modules\postcss\lib\list.js121436361000000000 0
 69C:\Users\tirad\Desktop\forkify\node_modules\lodash\_baseDifference.js121436361000000000 0
-46C:\Users\tirad\Desktop\forkify\src\js\model.js132559842140267230 0
+46C:\Users\tirad\Desktop\forkify\src\js\model.js132560121164507589 0
 48C:\Users\tirad\Desktop\forkify\node_modules\uuid132556628849064575 1
 59C:\Users\tirad\Desktop\forkify\node_modules\safe-regex\test132556628742945270 1
 65C:\Users\tirad\Desktop\forkify\node_modules\des.js\lib\des\cbc.js121436361000000000 0
@@ -301,7 +301,7 @@
 79C:\Users\tirad\Desktop\forkify\node_modules\es-abstract\2018\GetSubstitution.js121436361000000000 0
 56C:\Users\tirad\Desktop\forkify\node_modules\wcwidth\test132556628717086198 1
 76C:\Users\tirad\Desktop\forkify\node_modules\is-typed-array\.github\workflows132556628738479853 1
-60C:\Users\tirad\Desktop\forkify\src\js\views\bookmarksView.js132559896430218883 0
+60C:\Users\tirad\Desktop\forkify\src\js\views\bookmarksView.js132560125955089505 0
 74C:\Users\tirad\Desktop\forkify\node_modules\request-promise-core\README.md121436361000000000 0
 113C:\Users\tirad\Desktop\forkify\node_modules\util.promisify\node_modules\es-abstract\2019\DeletePropertyOrThrow.js121436361000000000 0
 71C:\Users\tirad\Desktop\forkify\node_modules\core-js\es\instance\some.js121436361000000000 0
@@ -318,7 +318,7 @@
 64C:\Users\tirad\Desktop\forkify\node_modules\@parcel\core\LICENSE121436361000000000 0
 101C:\Users\tirad\Desktop\forkify\node_modules\util.promisify\node_modules\es-abstract\2019\ToInteger.js121436361000000000 0
 80C:\Users\tirad\Desktop\forkify\node_modules\core-js\modules\es.symbol.species.js121436361000000000 0
-61C:\Users\tirad\Desktop\forkify\src\js\views\paginationView.js132559133814917010 0
+61C:\Users\tirad\Desktop\forkify\src\js\views\paginationView.js132560121599385009 0
 79C:\Users\tirad\Desktop\forkify\node_modules\resolve\test\precedence\aaa\main.js121436361000000000 0
 71C:\Users\tirad\Desktop\forkify\node_modules\minimist\test\stop_early.js121436361000000000 0
 81C:\Users\tirad\Desktop\forkify\node_modules\@babel\plugin-transform-react-jsx\lib132556628728532630 1
@@ -13540,7 +13540,7 @@
 68C:\Users\tirad\Desktop\forkify\node_modules\acorn\dist\acorn.mjs.map121436361000000000 0
 90C:\Users\tirad\Desktop\forkify\node_modules\csso\node_modules\css-tree\lib\lexer\search.js121436361000000000 0
 93C:\Users\tirad\Desktop\forkify\node_modules\core-js\modules\esnext.reflect.delete-metadata.js121436361000000000 0
-58C:\Users\tirad\Desktop\forkify\dist\controller.41a55208.js132559910352165998 0
+58C:\Users\tirad\Desktop\forkify\dist\controller.41a55208.js132560130229981513 0
 94C:\Users\tirad\Desktop\forkify\node_modules\csso\node_modules\css-tree\lib\generator\create.js121436361000000000 0
 101C:\Users\tirad\Desktop\forkify\node_modules\csso\node_modules\css-tree\lib\definition-syntax\parse.js121436361000000000 0
 71C:\Users\tirad\Desktop\forkify\node_modules\cssnano-util-raw-cache\dist132556628733664983 1
@@ -17493,10 +17493,10 @@
 53C:\Users\tirad\Desktop\forkify\node_modules\.bin\uuid132556628886394180 0
 57C:\Users\tirad\Desktop\forkify\node_modules\.bin\uuid.cmd132556628886394180 0
 58C:\Users\tirad\Desktop\forkify\node_modules\.bin\which.ps1132556628886571315 0
-62C:\Users\tirad\Desktop\forkify\dist\controller.41a55208.js.map132559910352275443 0
-56C:\Users\tirad\Desktop\forkify\dist\favicon.d2bb519a.png132559910352175913 0
-54C:\Users\tirad\Desktop\forkify\dist\icons.7af7ac13.svg132559910352165998 0
-46C:\Users\tirad\Desktop\forkify\dist\index.html132559910349399126 0
-53C:\Users\tirad\Desktop\forkify\dist\logo.3cc35b39.png132559910352175913 0
-53C:\Users\tirad\Desktop\forkify\dist\main.3fc41fcc.css132559910349367509 0
-57C:\Users\tirad\Desktop\forkify\dist\main.3fc41fcc.css.map132559910352264549 0
+62C:\Users\tirad\Desktop\forkify\dist\controller.41a55208.js.map132560130230493350 0
+56C:\Users\tirad\Desktop\forkify\dist\favicon.d2bb519a.png132560130229960980 0
+54C:\Users\tirad\Desktop\forkify\dist\icons.7af7ac13.svg132560130229970967 0
+46C:\Users\tirad\Desktop\forkify\dist\index.html132560130229971531 0
+53C:\Users\tirad\Desktop\forkify\dist\logo.3cc35b39.png132560130229991474 0
+53C:\Users\tirad\Desktop\forkify\dist\main.3fc41fcc.css132560130229971531 0
+57C:\Users\tirad\Desktop\forkify\dist\main.3fc41fcc.css.map132560130230052257 0
